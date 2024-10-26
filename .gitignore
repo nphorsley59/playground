@@ -1,0 +1,72 @@
+# macOS system files
+.DS_Store
+
+# Python bytecode and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folders
+.venv/
+venv/
+env/
+ENV/
+.pipenv/
+poetry.lock
+Pipfile.lock
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Log and temporary files
+*.log
+*.tmp
+*.temp
+
+# Python test cache
+.cache/
+.tox/
+pytest_cache/
+.coverage
+htmlcov/
+
+# IDE-specific folders
+.vscode/
+.idea/
+
+# Distribution / Packaging files
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Coverage reports
+coverage.xml
+*.cover
+*.coverage
+*.cov
+*.coverage.*
+.cache/
+
+# pyenv
+.python-version
+
+# PyInstaller
+#  Usually, these files are created by PyInstaller if you package your project
+*.spec
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pylint Reports
+pylint-report.txt
+
+# Profiling data
+.prof
+
+# Temporary by-products
+*.~ 
+*.swp
+*.swo
