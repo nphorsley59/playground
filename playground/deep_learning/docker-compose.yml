@@ -1,0 +1,16 @@
+services:
+  jupyter:
+    build: .
+    container_name: jupyter-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jupyter/work  # Persist notebooks
+      - ./datasets:/home/jupyter/datasets # Persist datasets
+      - ./config:/home/jupyter/.jupyter # Persist Jupyter settings
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - NB_USER=jupyter
+      - NB_UID=1000
+      - NB_GID=100
+    restart: unless-stopped
