@@ -8,12 +8,13 @@ ENV NB_UID=1000
 ENV NB_GID=100
 
 # Install additional Python packages
-RUN pip install --no-cache-dir \
+RUN pip install --no-cache-dir --upgrade pip \
     h5py \
     gensim \
     gym \
     keras \
     nltk \
+    matplotlib \
     tensorflow \
     torch \
     torchvision \
